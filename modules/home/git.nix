@@ -3,10 +3,15 @@
   programs.git = {
     enable = true;
 
+    signing = {
+      key = "283679F362805D0F";
+      signByDefault = true;
+    };
+
     settings = {
       user = {
-        name = "Frost-Phoenix";
-        email = "67cyril6767@gmail.com";
+        name = "İsmail Sarıkaya";
+        email = "142857944+isrky@users.noreply.github.com";
       };
 
       init.defaultBranch = "main";

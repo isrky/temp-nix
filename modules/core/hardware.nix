@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   hardware.graphics = {
     enable = true;
@@ -6,4 +6,6 @@
   };
 
   hardware.enableRedistributableFirmware = true;
+
+  services.xserver.videoDrivers = [ "nouveau" ];
 }

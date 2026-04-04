@@ -13,6 +13,7 @@
     ./program.nix
     ./security.nix
     ./services.nix
+    ./code-server.nix
     ./steam.nix
     ./system.nix
     ./flatpak.nix
@@ -20,5 +21,6 @@
     ./wayland.nix
     ./virtualization.nix
     # ./qmk.nix
+    ./dnscrypt-proxy.nix
   ];
 }

@@ -29,8 +29,9 @@
     git
   ];
 
-  time.timeZone = "Europe/Paris";
+  time.timeZone = "Europe/Istanbul";
   i18n.defaultLocale = "en_US.UTF-8";
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.android_sdk.accept_license = true;
   system.stateVersion = "26.05";
 }

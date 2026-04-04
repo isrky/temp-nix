@@ -4,7 +4,7 @@
     "$mod" = "SUPER";
 
     input = {
-      kb_layout = "us,fr";
+      kb_layout = "tr";
       kb_options = "grp:alt_caps_toggle";
 
       repeat_delay = 300;

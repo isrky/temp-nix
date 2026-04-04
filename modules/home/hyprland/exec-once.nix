@@ -12,6 +12,7 @@
     "wl-clip-persist --clipboard both &"
     "wl-paste --watch cliphist store &"
     "waybar &"
+    "sleep 2 && kdeconnect-indicator &"
     "swaync &"
     "udiskie --automount --notify --smart-tray &"
     "hyprctl setcursor Bibata-Modern-Ice 24 &"

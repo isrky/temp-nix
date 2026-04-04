@@ -26,6 +26,7 @@
     pastel                            # cli to manipulate colors
     scooter                           # Interactive find and replace in the terminal
     swappy                            # snapshot editing tool
+    android-tools                     # ADB and other Android tools
     tdf                               # cli pdf viewer
     tokei                             # project line counter
     translate-shell                   # cli translator
@@ -40,6 +41,7 @@
 
     ## Monitoring / fetch
     htop
+    inxi                              # system information tool
     onefetch                          # fetch utility for git repo
     wavemon                           # monitoring for wireless network devices
 
@@ -80,6 +82,7 @@
     wget
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     xdg-utils
+    xpipe
 
     winetricks
     wineWow64Packages.waylandFull

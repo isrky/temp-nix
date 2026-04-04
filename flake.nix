@@ -33,11 +33,12 @@
   outputs =
     { nixpkgs, self, ... }@inputs:
     let
-      username = "frostphoenix";
+      username = "ismails";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        config.android_sdk.accept_license = true;
       };
       lib = nixpkgs.lib;
     in

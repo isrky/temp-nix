@@ -29,6 +29,15 @@
         identityFile = "~/.ssh/id_github";
         identitiesOnly = true;
       };
+
+      oracle = {
+        host = "oracle";
+        hostname = "141.148.242.141";
+        user = "ismailsarikaya";
+        port = 8022;
+        identityFile = "~/.ssh/id_ed25519";
+        identitiesOnly = true;
+      };
     };
   };
 

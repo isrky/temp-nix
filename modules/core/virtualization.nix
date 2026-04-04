@@ -1,7 +1,11 @@
 { pkgs, username, ... }:
 {
-  # Add user to libvirtd group
-  users.users.${username}.extraGroups = [ "libvirtd" ];
+  # Add user to libvirtd, docker, and kvm groups
+  users.users.${username}.extraGroups = [
+    "libvirtd"
+    "docker"
+    "kvm"
+  ];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [
@@ -13,10 +17,21 @@
     virtio-win
     win-spice
     adwaita-icon-theme
+    # gvisor
   ];
 
   # Manage the virtualisation services
   virtualisation = {
+    docker = {
+      enable = true;
+      daemon.settings = {
+        # runtimes = {
+        #   runsc = {
+        #     path = "${pkgs.gvisor}/bin/runsc";
+        #   };
+        # };
+      };
+    };
     libvirtd = {
       enable = true;
       qemu = {

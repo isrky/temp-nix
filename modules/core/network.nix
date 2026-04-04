@@ -3,17 +3,15 @@
   networking = {
     hostName = "${host}";
     networkmanager.enable = true;
-    nameservers = [
-      "8.8.8.8"
-      "8.8.4.4"
-      "1.1.1.1"
-    ];
     firewall = {
       enable = true;
       allowedTCPPorts = [
         22
         80
         443
+        5555
+        5556
+        8080
         59010
         59011
       ];
@@ -21,6 +19,8 @@
         59010
         59011
       ];
+      # Allow all traffic from LAN (ethernet). If your interface name differs, check with: ip link
+      trustedInterfaces = [ "enp8s0f1" ];
     };
   };
 

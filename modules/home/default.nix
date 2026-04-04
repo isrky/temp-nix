@@ -9,6 +9,7 @@
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
     ./discord.nix                     # discord
+    ./easyeffects.nix                 # easyeffects
     ./fastfetch/fastfetch.nix         # fetch tool
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
@@ -17,6 +18,8 @@
     ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
+    ./kdeconnect.nix                  # phone integration
+    ./keepassxc.nix                   # password manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
     ./micro.nix                       # nano replacement
@@ -31,6 +34,7 @@
     ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
+    ./syncthing.nix                   # file synchronization
     ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget

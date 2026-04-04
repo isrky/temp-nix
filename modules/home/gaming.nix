@@ -25,5 +25,8 @@
     sameboy
     melonds
     dolphin-emu
+
   ];
+
+  programs.lutris.enable = true;
 }
