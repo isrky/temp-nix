@@ -20,6 +20,7 @@
     ./user.nix
     ./wayland.nix
     ./virtualization.nix
+    ./tailscale.nix
     # ./qmk.nix
     ./dnscrypt-proxy.nix
   ];

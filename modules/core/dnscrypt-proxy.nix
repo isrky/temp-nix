@@ -6,33 +6,28 @@
     firewall.checkReversePath = "loose";
   };
 
-  services.tailscale = {
-    enable = true;
-    extraSetFlags = [ "--accept-dns=false" ];
-  };
-
-  services.dnscrypt-proxy2 = {
+  services.dnscrypt-proxy = {
     enable = true;
     upstreamDefaults = false;
 
     settings = {
       listen_addresses = [ "127.0.0.1:53" ];
 
-      server_names     = [];
-      ipv4_servers     = true;
-      ipv6_servers     = false;
-      block_ipv6       = true;
+      server_names = [ ];
+      ipv4_servers = true;
+      ipv6_servers = false;
+      block_ipv6 = true;
       dnscrypt_servers = true;
-      doh_servers      = false;
-      odoh_servers     = false;
+      doh_servers = false;
+      odoh_servers = false;
 
-      require_dnssec   = true;
-      require_nolog    = true;
+      require_dnssec = true;
+      require_nolog = true;
       require_nofilter = true;
 
-      cache_size        = 4096;
-      cache_min_ttl     = 2400;
-      cache_max_ttl     = 86400;
+      cache_size = 4096;
+      cache_min_ttl = 2400;
+      cache_max_ttl = 86400;
       cache_neg_min_ttl = 60;
       cache_neg_max_ttl = 600;
 
@@ -44,7 +39,7 @@
           "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
           "https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md"
         ];
-        cache_file   = "/var/cache/dnscrypt-proxy/public-resolvers.md";
+        cache_file = "/var/cache/dnscrypt-proxy/public-resolvers.md";
         minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
       };
 
@@ -53,22 +48,25 @@
           "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md"
           "https://download.dnscrypt.info/resolvers-list/v3/relays.md"
         ];
-        cache_file   = "/var/cache/dnscrypt-proxy/relays.md";
+        cache_file = "/var/cache/dnscrypt-proxy/relays.md";
         minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
       };
 
       anonymized_dns = {
         routes = [
-          { server_name = "*"; via = [ "*" ]; }
+          {
+            server_name = "*";
+            via = [ "*" ];
+          }
         ];
         skip_incompatible = true;
       };
 
       local_doh = {
         listen_addresses = [ "127.0.0.1:3000" ];
-        path             = "/dns-query";
-        cert_file        = "/etc/dnscrypt-proxy/localhost.pem";
-        cert_key_file    = "/etc/dnscrypt-proxy/localhost.pem";
+        path = "/dns-query";
+        cert_file = "/etc/dnscrypt-proxy/localhost.pem";
+        cert_key_file = "/etc/dnscrypt-proxy/localhost.pem";
       };
     };
   };

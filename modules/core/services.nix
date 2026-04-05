@@ -11,6 +11,7 @@
     dbus.enable = true;
     fstrim.enable = true;
     fwupd.enable = true;
+    openssh.enable = true;
 
     # needed for GNOME services outside of GNOME Desktop
     dbus.packages = with pkgs; [
@@ -36,7 +37,12 @@
       ];
       configureFirewall = true;
       udpSupport = true;
-      udpPorts = [ "443" "50000" "50001" "50002" ];
+      udpPorts = [
+        "443"
+        "50000"
+        "50001"
+        "50002"
+      ];
     };
   };
 

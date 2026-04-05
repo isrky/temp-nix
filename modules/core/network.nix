@@ -19,8 +19,11 @@
         59010
         59011
       ];
-      # Allow all traffic from LAN (ethernet). If your interface name differs, check with: ip link
-      trustedInterfaces = [ "enp8s0f1" ];
+      # Allow all traffic from LAN and Tailscale. If your interface names differ, check with: ip link
+      trustedInterfaces = [
+        "enp8s0f1"
+        "tailscale0"
+      ];
     };
   };
 
