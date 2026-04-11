@@ -11,12 +11,12 @@
     nethack
 
     ## Celeste
-    olympus
+    # olympus
     # celeste-classic
     # celeste-classic-pm
 
     ## Doom
-    crispy-doom
+    # crispy-doom
 
     ## Emulation
     cemu
