@@ -13,6 +13,7 @@
     ./program.nix
     ./security.nix
     ./services.nix
+    ./sunshine.nix
     ./code-server.nix
     ./steam.nix
     ./system.nix
