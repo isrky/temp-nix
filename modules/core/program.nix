@@ -3,6 +3,7 @@
   programs = {
     dconf.enable = true;
     zsh.enable = true;
+    wireshark.enable = true;
 
     gnupg.agent = {
       enable = true;

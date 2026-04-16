@@ -23,6 +23,7 @@
       trustedInterfaces = [
         "enp8s0f1"
         "tailscale0"
+        "waydroid0"
       ];
     };
   };

@@ -11,7 +11,12 @@
     dbus.enable = true;
     fstrim.enable = true;
     fwupd.enable = true;
-    openssh.enable = true;
+    openssh = {
+      enable = true;
+      settings = {
+        Subsystem = "sftp internal-sftp";
+      };
+    };
 
     # needed for GNOME services outside of GNOME Desktop
     dbus.packages = with pkgs; [

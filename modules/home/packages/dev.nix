@@ -27,13 +27,10 @@
     devbox
     bruno
     code-cursor
+    aider-chat-full
     gemini-cli-bin
     codex
     antigravity
-    (runCommand "agy" {} ''
-      mkdir -p $out/bin
-      ln -s ${antigravity}/bin/antigravity $out/bin/agy
-    '')
     google-chrome
     ungoogled-chromium
 

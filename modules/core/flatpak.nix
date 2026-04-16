@@ -6,6 +6,7 @@
     enable = true;
     packages = [
       "com.github.tchx84.Flatseal"
+      "io.github.dzheremi2.lrcmake-gtk"
       "org.vinegarhq.Sober"
     ];
     overrides = {
