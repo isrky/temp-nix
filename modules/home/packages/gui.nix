@@ -17,12 +17,14 @@
 
     ## Utility
     dconf-editor
+    gnome-boxes
     gnome-disk-utility
     popsicle
     mission-center # GUI resources monitor
     zenity
 
     ## Level editor
+    godot
     ldtk
     tiled
   ];

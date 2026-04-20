@@ -38,6 +38,7 @@
     ## TUI
     epy # ebook reader
     gtt # google translate TUI
+    mc # midnight commander file manager
     toipe # typing test in the terminal
     ttyper # cli typing test
 

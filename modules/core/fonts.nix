@@ -19,6 +19,7 @@
       maple-mono-custom
 
       noto-fonts
+      corefonts
       public-sans
 
       nerd-fonts.jetbrains-mono
