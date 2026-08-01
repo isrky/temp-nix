@@ -42,6 +42,7 @@ in
       "network"
       "battery"
       "hyprland/language"
+      "custom/timew"
       "custom/notification"
       "custom/power-menu"
     ];
@@ -148,6 +149,17 @@ in
       on-click-right = "rofi -show drun";
       tooltip = "true";
       tooltip-format = "Random Wallpaper";
+    };
+    "custom/timew" = {
+      format = "{}";
+      return-type = "json";
+      interval = 30;
+      exec = "timew-status";
+      exec-if = "which timew";
+      on-click = "timew-toggle";
+      on-click-right = "timew-break";
+      on-click-middle = "timew-report";
+      tooltip = true;
     };
     "custom/notification" = {
       tooltip = true;

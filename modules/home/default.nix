@@ -38,6 +38,7 @@
     ./spicetify.nix                   # spotify client
     ./syncthing.nix                   # file synchronization
     ./thunderbird.nix                 # email client
+    ./timewarrior/timewarrior.nix     # work time tracking
     ./trayscale.nix                   # tailscale GUI
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen

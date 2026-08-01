@@ -10,6 +10,9 @@
       # show keybinds list
       "$mod, F1, exec, show-keybinds"
 
+      # show worktime report
+      "$mod, F2, exec, timew-report"
+
       # keybindings
       "$mod, Return, exec, ghostty --gtk-single-instance=true"
       "ALT, Return, exec, [float; size 1111 700] ghostty"

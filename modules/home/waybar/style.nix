@@ -80,11 +80,24 @@ in
       padding: 1px;
     }
 
-    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-notification, #custom-power-menu {
+    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-timew, #custom-notification, #custom-power-menu {
       padding-left: 5px;
       padding-right: 5px;
       margin-right: 10px;
       color: ${text_color};
+    }
+
+    #custom-timew.active {
+      color: ${green};
+    }
+    #custom-timew.voluntary {
+      color: ${yellow};
+    }
+    #custom-timew.break {
+      color: ${blue};
+    }
+    #custom-timew.overtime {
+      color: ${red};
     }
 
     #pulseaudio, #language, #custom-notification {

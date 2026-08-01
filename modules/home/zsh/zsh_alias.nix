@@ -46,6 +46,19 @@
       # python
       piv = "python -m venv .venv";
       psv = "source .venv/bin/activate";
+
+      # Timewarrior
+      tw = "timew";
+      twi = "timew start job"; # clock in ("work" is swallowed by timew's date parser)
+      two = "timew stop"; # clock out
+      twb = "timew start off"; # break
+      twc = "timew continue";
+      twd = "timew summary :day";
+      tww = "timew summary :week";
+      twrd = "timew worktime :day"; # regular/overtime report
+      twrw = "timew worktime :week";
+      twrm = "timew worktime :month";
+      twu = "timew undo";
     };
   };
 }
