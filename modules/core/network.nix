@@ -34,5 +34,7 @@
   environment.systemPackages = with pkgs; [
     cloudflared
     networkmanagerapplet
+    v2ray
+    xray
   ];
 }
