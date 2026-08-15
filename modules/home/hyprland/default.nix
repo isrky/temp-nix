@@ -8,6 +8,7 @@
     ./binds.nix
     ./windowrules.nix
     ./hyprlock.nix
+    ./hyprsunset.nix
     ./variables.nix
   ];
 }
