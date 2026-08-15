@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./activitywatch/activitywatch.nix # automated activity tracking
     ./aseprite/aseprite.nix           # pixel art editor
     ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
@@ -33,13 +34,14 @@
     ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
+    # ./safeeyes.nix                    # break reminders for eye strain
     ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
     ./syncthing.nix                   # file synchronization
     ./thunderbird.nix                 # email client
     ./timewarrior/timewarrior.nix     # work time tracking
-    ./trayscale.nix                   # tailscale GUI
+    # ./trayscale.nix                   # tailscale GUI
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget

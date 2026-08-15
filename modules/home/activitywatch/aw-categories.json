@@ -1,0 +1,200 @@
+{
+  "categories": [
+    {
+      "data": { "color": "#0F0", "score": 10 },
+      "name": ["Work"],
+      "rule": { "type": "none" },
+      "name_pretty": "Work",
+      "subname": "Work",
+      "parent": null,
+      "depth": 0,
+      "id": 0
+    },
+    {
+      "name": ["Work", "Docs"],
+      "rule": { "regex": "LibreOffice|Obsidian|Evince|Google Docs|JOSM", "type": "regex" },
+      "name_pretty": "Work>Docs",
+      "subname": "Docs",
+      "parent": ["Work"],
+      "depth": 1,
+      "id": 1
+    },
+    {
+      "name": ["Work", "Programming"],
+      "rule": {
+        "ignore_case": true,
+        "regex": "GitHub|GitLab|Stack Overflow|codium|dev\\.zed\\.Zed|zeditor|IntelliJ|PyCharm|WebStorm|Android Studio|ghostty|kitty|zellij|tmux|nvim|lazygit|lazydocker|Godot|LDtk|Tiled|ImHex|GHex|bruno|Burp Suite|nixos-config|virt-manager",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming",
+      "subname": "Programming",
+      "parent": ["Work"],
+      "depth": 1,
+      "id": 2
+    },
+    {
+      "name": ["Work", "Programming", "AI"],
+      "rule": {
+        "ignore_case": true,
+        "regex": "claude|aider|codex|opencode|cursor|antigravity|copilot|chatgpt",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>AI",
+      "subname": "AI",
+      "parent": ["Work", "Programming"],
+      "depth": 2,
+      "id": 3
+    },
+    {
+      "name": ["Work", "Programming", "Embedded"],
+      "rule": {
+        "ignore_case": true,
+        "regex": "platformio|\\bpio\\b|esptool|espflash|openocd|esp32|arduino",
+        "type": "regex"
+      },
+      "name_pretty": "Work>Programming>Embedded",
+      "subname": "Embedded",
+      "parent": ["Work", "Programming"],
+      "depth": 2,
+      "id": 4
+    },
+    {
+      "name": ["Work", "Programming", "ActivityWatch"],
+      "rule": { "ignore_case": true, "regex": "ActivityWatch|aw-", "type": "regex" },
+      "name_pretty": "Work>Programming>ActivityWatch",
+      "subname": "ActivityWatch",
+      "parent": ["Work", "Programming"],
+      "depth": 2,
+      "id": 5
+    },
+    {
+      "name": ["Work", "Image"],
+      "rule": { "regex": "GIMP|Aseprite|Inkscape|swappy", "type": "regex" },
+      "name_pretty": "Work>Image",
+      "subname": "Image",
+      "parent": ["Work"],
+      "depth": 1,
+      "id": 6
+    },
+    {
+      "name": ["Work", "Video"],
+      "rule": { "regex": "com\\.obsproject|OBS Studio|HandBrake|video-trimmer", "type": "regex" },
+      "name_pretty": "Work>Video",
+      "subname": "Video",
+      "parent": ["Work"],
+      "depth": 1,
+      "id": 7
+    },
+    {
+      "name": ["Work", "Audio"],
+      "rule": { "regex": "Audacity|EasyEffects", "type": "regex" },
+      "name_pretty": "Work>Audio",
+      "subname": "Audio",
+      "parent": ["Work"],
+      "depth": 1,
+      "id": 8
+    },
+    {
+      "data": { "color": "#F33" },
+      "name": ["Media"],
+      "rule": { "type": "none" },
+      "name_pretty": "Media",
+      "subname": "Media",
+      "parent": null,
+      "depth": 0,
+      "id": 9
+    },
+    {
+      "data": { "color": "#F80" },
+      "name": ["Media", "Games"],
+      "rule": {
+        "regex": "Prism Launcher|Minecraft|Cemu|mGBA|snes9x|SameBoy|melonDS|Dolphin|doom|NetHack|vitetris|2048|Steam",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Games",
+      "subname": "Games",
+      "parent": ["Media"],
+      "depth": 1,
+      "id": 10
+    },
+    {
+      "data": { "color": "#F33" },
+      "name": ["Media", "Video"],
+      "rule": { "regex": "YouTube|mpv|VLC|Twitch|Netflix", "type": "regex" },
+      "name_pretty": "Media>Video",
+      "subname": "Video",
+      "parent": ["Media"],
+      "depth": 1,
+      "id": 11
+    },
+    {
+      "data": { "color": "#FCC400" },
+      "name": ["Media", "Social Media"],
+      "rule": {
+        "ignore_case": true,
+        "regex": "reddit|Facebook|Twitter|Instagram|Mastodon",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Social Media",
+      "subname": "Social Media",
+      "parent": ["Media"],
+      "depth": 1,
+      "id": 12
+    },
+    {
+      "data": { "color": "#A8FC00" },
+      "name": ["Media", "Music"],
+      "rule": {
+        "ignore_case": true,
+        "regex": "spotify|Audacious|Amberol|lowfi|SoundCloud",
+        "type": "regex"
+      },
+      "name_pretty": "Media>Music",
+      "subname": "Music",
+      "parent": ["Media"],
+      "depth": 1,
+      "id": 13
+    },
+    {
+      "data": { "color": "#9FF" },
+      "name": ["Comms"],
+      "rule": { "type": "none" },
+      "name_pretty": "Comms",
+      "subname": "Comms",
+      "parent": null,
+      "depth": 0,
+      "id": 14
+    },
+    {
+      "name": ["Comms", "IM"],
+      "rule": {
+        "regex": "Vesktop|Discord|Telegram|Dino|WhatsApp|Signal|Slack|Element|KDE Connect",
+        "type": "regex"
+      },
+      "name_pretty": "Comms>IM",
+      "subname": "IM",
+      "parent": ["Comms"],
+      "depth": 1,
+      "id": 15
+    },
+    {
+      "name": ["Comms", "Email"],
+      "rule": { "regex": "Thunderbird|Gmail|Proton Mail", "type": "regex" },
+      "name_pretty": "Comms>Email",
+      "subname": "Email",
+      "parent": ["Comms"],
+      "depth": 1,
+      "id": 16
+    },
+    {
+      "data": { "color": "#CCC" },
+      "name": ["Uncategorized"],
+      "rule": { "type": null },
+      "name_pretty": "Uncategorized",
+      "subname": "Uncategorized",
+      "parent": null,
+      "depth": 0,
+      "id": 17
+    }
+  ]
+}
