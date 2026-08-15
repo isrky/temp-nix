@@ -4,12 +4,14 @@ red='#cc241d'
 green='#98971a'
 blue='#458588'
 yellow='#d79921'
+purple='#b16286'
 gray='#a89984'
 
 shutdown="<span color='${red}'>󰐥</span>"
 reboot="<span color='${green}'>󰜉</span>"
 lock="<span color='${blue}'>󰌾</span>"
 suspend="<span color='${yellow}'>󰤄</span>"
+hibernate="<span color='${purple}'>󰒲</span>"
 quit="<span color='${gray}'>✘</span>"
 
 yes="<span color='${green}'>✔</span>"
@@ -22,7 +24,7 @@ rofi_cmd() {
 }
 
 run_rofi() {
-    echo -e "$shutdown\n$reboot\n$lock\n$suspend\n$quit" | rofi_cmd
+    echo -e "$shutdown\n$reboot\n$lock\n$suspend\n$hibernate\n$quit" | rofi_cmd
 }
 
 confirm_cmd() {
@@ -46,6 +48,9 @@ run_cmd() {
         elif [[ $1 == '--suspend' ]]; then
             hyprlock &
             systemctl suspend
+        elif [[ $1 == '--hibernate' ]]; then
+            hyprlock &
+            systemctl hibernate
         fi
     else
         exit 0
@@ -67,5 +72,9 @@ case ${chosen} in
     $suspend)
         sleep 0.1
         run_cmd --suspend
+        ;;
+    $hibernate)
+        sleep 0.1
+        run_cmd --hibernate
         ;;
 esac
