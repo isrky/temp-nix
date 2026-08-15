@@ -1,0 +1,4 @@
+{ ... }:
+{
+  services.safeeyes.enable = true;
+}
