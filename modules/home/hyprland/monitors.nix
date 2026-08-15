@@ -9,8 +9,8 @@ in
         if isLaptop then
           [
             "eDP-1,1920x1080@120,0x0,1"
-            # any external monitor: preferred mode, placed to the right
-            ",preferred,auto-right,1"
+            # any external monitor: preferred mode, placed to the left
+            ",preferred,auto-left,1"
           ]
         else
           [ ",preferred,auto,auto" ];

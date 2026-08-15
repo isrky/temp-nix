@@ -38,6 +38,7 @@
       "$mod, W,exec, wallpaper-picker"
       "$mod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
       "$mod, N, exec, swaync-client -t -sw"
+      "$mod SHIFT, N, exec, toggle-nightlight"
       "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 9] missioncenter'"
       "$mod, equal, exec, woomer"
       # "$mod SHIFT, W, exec, vm-start"
@@ -127,6 +128,10 @@
       "$mod ALT, k, moveactive, 0 -80"
       "$mod ALT, l, moveactive, 80 0"
 
+      # cycle windows in active workspace
+      "ALT, Tab, cyclenext,"
+      "ALT, Tab, alterzorder, top"
+
       # monitor control
       "$mod, Tab, focusmonitor, +1"
       "$mod SHIFT, Tab, movewindow, mon:+1"
@@ -146,8 +151,8 @@
       ", XF86AudioPrev,exec, playerctl previous"
       ", XF86AudioStop,exec, playerctl stop"
 
-      "$mod, mouse_down, workspace, e-1"
-      "$mod, mouse_up, workspace, e+1"
+      "$mod, mouse_down, workspace, m+1"
+      "$mod, mouse_up, workspace, m-1"
 
       # clipboard manager
       "$mod, V, exec, toggle-rofi \"cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy\""
