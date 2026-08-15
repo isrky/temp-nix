@@ -108,6 +108,8 @@ else
     state="Not tracking"
 fi
 tooltip="${state} — today: $(fmt "$total")${detail:+ (${detail})}"
+[ -e "${XDG_RUNTIME_DIR:-/tmp}/timew-meeting" ] &&
+    tooltip="$tooltip — meeting mode (AFK automation paused)"
 
 text=$(fmt "$total")
 # icon only when idle and nothing tracked yet

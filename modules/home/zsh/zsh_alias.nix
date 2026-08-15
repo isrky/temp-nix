@@ -11,6 +11,7 @@
       code = "codium";
       openclaude = "pnpm dlx @gitlawb/openclaude@latest";
       openclaude-npx = "npx -y @gitlawb/openclaude@latest";
+      cline = "pnpm dlx cline";
       apkmitm = "pnpm dlx apk-mitm";
       aiderdesk = "pnpm dlx @aiderdesk/aiderdesk";
       diff = "delta --diff-so-fancy --side-by-side";
@@ -59,6 +60,8 @@
       twrw = "timew worktime :week";
       twrm = "timew worktime :month";
       twu = "timew undo";
+      twm = "timew-meeting"; # toggle meeting mode (pauses AFK automation)
+      tway = "timew-was-work"; # reclassify last auto-break as work
     };
   };
 }
