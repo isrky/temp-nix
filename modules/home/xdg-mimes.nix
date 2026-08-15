@@ -12,6 +12,7 @@ let
     terminal = [ "ghostty.desktop" ];
     archive = [ "org.gnome.FileRoller.desktop" ];
     discord = [ "webcord.desktop" ];
+    mail = [ "org.gnome.Geary.desktop" ];
   };
 
   mimeMap = {
@@ -68,6 +69,10 @@ let
       "application/*tar"
     ];
     discord = [ "x-scheme-handler/discord" ];
+    mail = [
+      "mailto"
+      "x-scheme-handler/mailto"
+    ];
   };
 
   associations =

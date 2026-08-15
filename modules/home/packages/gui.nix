@@ -5,8 +5,10 @@
     amberol # music player
     audacity
     gimp
+    handbrake
     media-downloader
     obs-studio
+    qbittorrent
     pavucontrol
     video-trimmer
     vlc
@@ -24,6 +26,7 @@
     popsicle
     mission-center # GUI resources monitor
     seahorse # gnome-keyring UI
+    system-config-printer
     zenity
 
     ## Level editor
@@ -35,6 +38,7 @@
     josm
 
     ## Communication
+    geary # email
     localsend
     pear-desktop
     telegram-desktop

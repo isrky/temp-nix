@@ -6,4 +6,6 @@
     enable = true;
     setAsDefaultBrowser = true;
   };
+
+  home.packages = with pkgs; [ librewolf ];
 }

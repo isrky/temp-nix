@@ -24,6 +24,7 @@
     broot # tree files view
     caligula # User-friendly, lightweight TUI for disk imaging
     google-cloud-sdk # Google Cloud CLI
+    flyctl # Fly.io CLI
     hyperfine # benchmarking tool
     just # command runner (makefile like)
     pastel # cli to manipulate colors

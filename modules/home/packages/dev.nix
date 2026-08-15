@@ -22,15 +22,16 @@
     python3
     python312Packages.ipython
 
-    ## Kotlin
+    ## Java / Kotlin
+    jdk21
     kotlin
 
     ## JavaScript / Node.js
     nodejs
     pnpm
+    bun
     devbox
     bruno
-    google-chrome
     ungoogled-chromium
 
     ## Security
@@ -58,5 +59,8 @@
     espup # installs Rust ESP toolchain pieces
     openocd # JTAG / on-chip debugging
     dfu-util # DFU flashing for supported boards/adapters
+
+    freerdp
+    remmina
   ];
 }

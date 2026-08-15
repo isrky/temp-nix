@@ -9,7 +9,7 @@
     code-cursor
     codex
     jan
-    litellm
+    # litellm
     llmfit
     opencode
   ];

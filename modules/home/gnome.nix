@@ -3,6 +3,7 @@
   home.packages = (
     with pkgs;
     [
+      baobab # disk usage analyzer
       evince # pdf
       file-roller # archive
       gnome-text-editor # gedit
