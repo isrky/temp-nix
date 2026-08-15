@@ -21,8 +21,15 @@
     # only start monitor watching screen on laptop
     "${if (host == "p14s" || host == "laptop") then "monitor-watcher &" else ""}"
 
+    # ActivityWatch AFK -> timewarrior auto-break/clock-out bridge
+    "timew-aw-bridge &"
+    # push curated AW categories to the server (waits for it internally)
+    "aw-set-categories &"
+    # lock when bluetooth link to phone drops (bt-lock-watch off|on|toggle to pause)
+    "bt-lock-watch &"
+
     "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
     "[workspace 1 silent] zen-beta"
-    "[workspace 2 silent] ghostty"
+    # "[workspace 2 silent] ghostty"
   ];
 }
